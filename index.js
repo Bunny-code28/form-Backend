@@ -29,7 +29,7 @@ app.post('/form-submit', (req,res) => {
     const {name , email } = req.body
     user.insertOne({name ,email})
     res.json({status:true})
-})--
+})
 
 
 console.log("Hi")
