@@ -7,7 +7,9 @@ import connectDB from './dbconfig/dbconnection.js'
 connectDB()
 const app = express()
 
-app.use(cors())
+app.use(cors({
+  origin: "https://form-frontend-orpin.vercel.app"
+}));
 app.use(express.json());
 
 app.get('/', (req, res) => { 
